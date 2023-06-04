@@ -20,7 +20,7 @@ import os
 
 
 app = Flask(__name__)
-app.config['SECCRET_KEY'] = os.environ.get('SECCRET_KEY')
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 ckeditor = CKEditor(app)
 Bootstrap(app)
 
